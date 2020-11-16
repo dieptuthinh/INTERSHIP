@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Give+You+Glory);
+* {
+    border: 1;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(252, 251, 249, 0.68);
+    font-size: 16px;
+    color: #4d4f56;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+
+/* .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Sans Pro", sans-serif;
+} */
+
+a {
+    color: #f30;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ef3b0e
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #404048;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #eaebeb;
+}
+
+
+/* start header */
+
+#header {
+    position: fixed;
+    width: 100%;
+    border: 0;
+    z-index: 99;
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: url("../images/menu-bg.jpg");
+    padding: .95rem 1rem;
+    border-radius: 0;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 10px;
+}
+
+.navbar-dark .navbar-toggler {
+    background-image: none;
+    border-color: transparent;
+}
+
+@media (max-width: 62em) {
+    .navbar-nav {
+        padding-top: .425rem;
+        padding-left: 0.75rem;
+    }
+    .navbar-nav .nav-item {
+        float: none;
+    }
+    .navbar-brand {
+        float: right;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-item {
+        display: block;
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+    }
+    .dropdown-menu {
+        position: relative;
+        float: none;
+        background-color: transparent;
+    }
+    .dropdown-menu a {
+        color: #fff
+    }
+}
+
+.headroom--pinned {
+    display: block;
+}
+
+.headroom--unpinned {
+    display: none;
+}
+
+.navbar-fixed-top {
+    position: fixed
+}
+
+.navbar-toggler {
+    padding: 4px 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    color: #f30;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 1270px;
+    width: 94%;
+}
+
+.slider.slider-horizontal .slider-tick-container {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slider.slider-horizontal .slider-tick-label-container {
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+    padding-top: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+.slider.slider-vertical .slider-tick-label-container {
+    white-space: nowrap;
+}
+
+.slider.slider-vertical .slider-tick-label-container .slider-tick-label {
+    padding-left: 4px;
+}
+
+
+/* end header */
+
+
+/* start footer */
+
+footer {
+    background: url(../images/pattern.png)center repeat;
+    padding: 90px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.payment-options ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+footer h5 {
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer-logo-block img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer p,
+footer,
+footer span {
+    font-weight: 300;
+    color: #9c9da5;
+}
+
+.address h5 a {
+    color: #f30;
+    font-size: 26px;
+    font-family: "Give You Glory", cursive;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.address h5 a:hover {
+    color: #fff;
+}
+
+.popular-locations ul li {
+    display: inline-block;
+    width: 49%;
+}
+
+footer ul li {
+    margin-bottom: 6px;
+}
+
+footer ul li a {
+    color: #9c9da5;
+    transition: all .3s;
+}
+
+.how-it-works-links {
+    margin-bottom: 70px;
+}
+
+.address p {
+    margin-bottom: 35px;
+}
+
+footer ul li a:hover {
+    color: #f30;
+}
+
+footer li a {
+    line-height: 20px;
+    display: inline-block;
+}
+
+.payment-options ul {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .footer-logo-block {
+        margin-bottom: 25px
+    }
+}
+
+
+/* end footer */
+
+
+/* statrt content */
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+    width: 100%;
+    height: 700px;
+    background-color: #f5efe0;
+    /* background-image: url("images/it.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 750px; */
+}
+
+.container h1 {
+    color: black;
+}
+
+
+/* end content */
