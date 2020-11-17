@@ -5,7 +5,10 @@
 }
 
 body {
-    background: #1690A7;
+    /* background: #1690A7; */
+    background-image: url("../images/it.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 750px;
     display: flex;
     justify-content: center;
     align-items: center;
