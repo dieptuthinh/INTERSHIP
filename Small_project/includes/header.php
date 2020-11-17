@@ -48,9 +48,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                     }
                                 else//if user is login 
                                     {
-                                        echo  '<li class="nav-item"><a href="exercises.php" class="nav-link active">your exercises</a> </li>';
-                                        echo '<li class="nav-item"> <a class="nav-link active" href="About.php">Edit User<span class="sr-only"></span></a> </li>';
-                                        echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
+                                        echo  '<li class="nav-item"><a href="exercises.php" class="nav-link active">My exercises</a> </li>';
+                                        echo '<li class="nav-item"> <a class="nav-link active" href="view_users.php">View User<span class="sr-only"></span></a> </li>';
+                                        echo  '<li class="nav-item"><a href="ChangePass.php" class="nav-link active">Change Password</a> </li>';
+                                        echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
                                         
                                         //echo $_SESSION['name'];
                                     }
