@@ -33,7 +33,7 @@ session_start(); //start temp session until logout/browser closed
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">About <span class="sr-only"></span></a> </li>        
+                                    
 							<?php
                                 if(empty($_SESSION["user_id"]))// if user is not login
                                     {
@@ -42,8 +42,9 @@ session_start(); //start temp session until logout/browser closed
                                     }
                                 else//if user is login 
                                     {
-                                        echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">your orders</a> </li>';
                                         echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
+                                        echo  '<li class="nav-item"><a class="nav-link active" href="About.php">About <span class="sr-only"></span></a> </li>';
+                                        echo  '<li class="nav-item"><a class="nav-link active" href="index.php">Hello, $_SESSION["name"]<span class="sr-only"></span></a> </li>';
                                     }
                                 ?>
                         </ul>
