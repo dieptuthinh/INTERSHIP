@@ -29,24 +29,26 @@ session_start(); //start temp session until logout/browser closed
             <nav class="navbar navbar-dark">
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.html"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
+                    <a class="navbar-brand" href="index.html"> <img class="img-rounded" src="images/t.png" style="height: 50px; width: 95px;" alt=""> </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="exercises.php">My exercises<span class="sr-only"></span></a> </li>
 							<?php
-                                if(empty($_SESSION["id"]))// if user is not login
+                                if(empty($_SESSION["id"] and $_SESSION["user_name"]))// if user is not login
                                     {
                                         echo '<li class="nav-item"><a href="login.php" class="nav-link active">login</a> </li>
                                         <li class="nav-item"><a href="signup.php" class="nav-link active">signup</a> </li>';
                                     }
                                 else//if user is login 
                                     {
-                                        echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">logout</a> </li>';
-                                        echo  '<li class="nav-item"><a class="nav-link active" href="About.php">About <span class="sr-only"></span></a> </li>';
-                                        echo  '<li class="nav-item"><a class="nav-link active" href="index.php">Hello, $_SESSION["name"]<span class="sr-only"></span></a> </li>';
+                                        echo  '<li class="nav-item"><a href="exercises.php" class="nav-link active">My exercises</a> </li>';
+                                        echo '<li class="nav-item"> <a class="nav-link active" href="view_users.php">View User<span class="sr-only"></span></a> </li>';
+                                        echo  '<li class="nav-item"><a href="ChangePass.php" class="nav-link active">Change Password</a> </li>';
+                                        echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+                                        
+                                        //echo $_SESSION['name'];
                                     }
-                                ?>
+                            ?>
                         </ul>
 						 
                     </div>
